@@ -47,7 +47,7 @@ MNIST 이미지 분류 모델 학습, 평가, 핸들링 작업을 위한 노트�
 # Demo Repository Clone
 git clone https://github.com/JeonDongcheol/mlops-demo.git
 pip install -U pip
-cd mlops-dev
+cd mlops-demo
 # 노트북 테스트를 위한 모델 학습 코드
 python3 mnist.py
 # Pipeline YAML 파일 생성 코드
