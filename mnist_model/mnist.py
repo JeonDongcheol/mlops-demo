@@ -113,7 +113,7 @@ def test_plot_image(model) :
 
 def main(n_hidden_1, n_hidden_2, dropout, learning_rate, training_steps):
     # Tensorboard Log Path
-    log_dir = "/home/jovyan/tensorboard/notebook"
+    log_dir = "/home/jovyan/tensorboard/notebook/mnist_model"
     
     display_step = 100
     # Build neural network model.
