@@ -112,6 +112,9 @@ def test_plot_image(model) :
 
 
 def main(n_hidden_1, n_hidden_2, dropout, learning_rate, training_steps):
+    # Tensorboard Log Path
+    log_dir = "/home/jovyan/tensorboard/notebook"
+    
     display_step = 100
     # Build neural network model.
     neural_net = NeuralNet(n_hidden_1, n_hidden_2, dropout)
@@ -129,6 +132,13 @@ def main(n_hidden_1, n_hidden_2, dropout, learning_rate, training_steps):
             loss = cross_entropy_loss(pred, batch_y)
             acc = accuracy(pred, batch_y)
             print("train-step: %i, train-loss: %f, train-accuracy: %f" % (step, loss, acc))
+            
+            # Tensorboard Scalar 생성을 위한 작업
+            train_summary_writer = tf.summary.create_file_writer(log_dir)
+            
+            with train_summary_writer.as_default():
+                tf.summary.scalar('Train Loss', loss, step=step)
+                tf.summary.scalar('Train Accuracy', acc, step=step)
 
     # Test model on validation set.
     neural_net.summary()
