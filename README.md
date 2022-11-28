@@ -4,4 +4,4 @@
 ## Demo List
 
 - [__MNIST Handwritten Image Classification__](./mnist_model)
-- [__Face Mask Object Detection__](./face_mask)
+- [__Face Mask Object Detection__](./face_mask_model)
