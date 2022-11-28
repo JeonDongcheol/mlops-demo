@@ -1,5 +1,5 @@
-# MLOps Platform Demo Repository
-> MLOps Platform Demo 시연에서 MNIST 이미지 손글씨 분류 관련 Repository 입니다.
+# MNIST 손글씨 이미지 분류 데모
+> MLOps Platform Demo 시연에서 MNIST 이미지 손글씨 분류 관련 Repository 입니다. Tensorflow 2.5.0 버전으로 진행했으며, 무거운 모델이 아니기 때문에 CPU Resource만 사용합니다.
 
 ## 프로젝트
 
