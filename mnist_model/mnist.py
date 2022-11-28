@@ -146,7 +146,7 @@ def main(n_hidden_1, n_hidden_2, dropout, learning_rate, training_steps):
     print(neural_net.fc1)
     pred = neural_net(x_test, is_training=False)
     print("Test-accuracy: %f" % accuracy(pred, y_test))
-    neural_net.save('mnist_model/1')
+    neural_net.save('mnist_img_classification/1')
     test_plot_image(neural_net)
 
 
