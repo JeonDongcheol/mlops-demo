@@ -108,7 +108,7 @@ MNIST 손글씨 분류 모델 하이퍼파라미터 튜닝 (num_hidden_layer_1, 
 
 - 자원 카드 : H.Normal
 - Trial Thresholds : Basic
-- 튜닝 코드 : (노트북)mnist-image-classification-notebook > mlops-demo/mnist_hyper_tuning.py 선택
+- 튜닝 코드 : (노트북)mnist-image-classification-notebook > mlops-demo/mnist_model/mnist_hyper_tuning.py 선택
 
 하이퍼파라미터 튜닝 과정은 반드시 지켜볼 필요는 없으며, 필요에 따라 다른 컨텐츠들을 먼저 시연하다가 결과를 확인해도 됩니다.
 
@@ -178,7 +178,7 @@ MNIST 이미지 분류 모델 예측 API 서버
 추가로 설정할 항목은 다음과 같습니다.
 
 - 모델 서빙 엔진 : Tensorflow Serving
-- 모델 경로 : (노트북) mnist-classification-notebook > mlops-demo/mnist_model
+- 모델 경로 : (노트북) mnist-classification-notebook > mlops-demo/mnist_model/mnist_img_classification
 - 자원 카드 : I.Normal
 
 ### 모델 서빙 테스트
